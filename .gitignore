@@ -1,0 +1,7 @@
+MineSweeper.vcxproj
+*.pdb
+Debug/vc141.idb
+*.tlog
+Debug/MineSweeper.log
+*.obj
+MineSweeper.vcxproj.filters
