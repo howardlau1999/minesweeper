@@ -39,6 +39,7 @@ struct Board {
 
 #define getNumber(status) (status & NUMBER_MASK)
 inline int canOpen(int status);
+inline int withinBorder(struct Board *board, const int x, const int y);
 
 int* generatePositions(const int width, const int height, const int mines);
 void setMines(struct Board *board, const int *positions);
