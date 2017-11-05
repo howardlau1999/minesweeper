@@ -20,7 +20,7 @@ struct Board {
 #define NUMBER_MASK 0x000F
 
 #define MAX_MINES_RATIO 0.8
-#define MIN_MINES_RATIO 0.1 
+#define MIN_MINES_RATIO 0.01
 #define MAX_WIDTH 99
 #define MIN_WIDTH 10
 #define MAX_HEIGHT 99

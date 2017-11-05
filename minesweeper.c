@@ -6,8 +6,10 @@
 
 int main() {
 	struct Board board;
+	
 	while (1) {
 		system("cls");
+		printf(HELP_TEXT);
 		initGame(&board);
 
 		int gameStatus;

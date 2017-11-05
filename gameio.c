@@ -1,4 +1,5 @@
 #include "gameio.h"
+#include "display.h"
 
 void initGame(struct Board *board) {
 	int width, height, mines;
