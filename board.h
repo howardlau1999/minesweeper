@@ -38,6 +38,12 @@ struct Board {
 #define unsetFlag(block) (block.status &= (~FLAG_MASK))
 
 #define getNumber(status) (status & NUMBER_MASK)
+#define diagonalLoop(statements) for (int deltaX = -1; deltaX <= 1; deltaX++) { \
+                                 for (int deltaY = -1; deltaY <= 1; deltaY++) { \
+									statements \
+                                 }}
+
+
 inline int canOpen(int status);
 inline int withinBorder(struct Board *board, const int x, const int y);
 
