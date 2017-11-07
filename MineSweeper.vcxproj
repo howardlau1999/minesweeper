@@ -116,11 +116,13 @@
     <ClCompile Include="display.c" />
     <ClCompile Include="gameio.c" />
     <ClCompile Include="minesweeper.c" />
+    <ClCompile Include="savefile.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="board.h" />
     <ClInclude Include="display.h" />
     <ClInclude Include="gameio.h" />
+    <ClInclude Include="savefile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

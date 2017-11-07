@@ -3,6 +3,7 @@
 #include "board.h"
 #include "display.h"
 #include "gameio.h"
+#include "savefile.h"
 
 int main() {
 	struct Board board;
@@ -14,14 +15,16 @@ int main() {
 
 		int gameStatus;
 
-		while (!(gameStatus = game(&board)));
+		while (!(gameStatus = game(&board))) {
+			saveBoard(&board, SAVEFILE);
+		}
 
 		printBoard(&board);
 
 		switch (gameStatus) {
 		case LOSE:
 			printf("YOU LOSE!");
-			break;// printStatistics();
+			break;
 		case WIN:
 			printf("YOU WIN!");
 			break;
